@@ -8,5 +8,5 @@ The second step was to implement a semi-supervised learning approach for environ
 The end goal was a paper with the proposed method and results. The paper can be found in `paper/project12.pdf`. The abstract is included below. 
 
 ## Abstract of paper
-### Titel: Environmental sound classification with semi-supervised learning
+### Title: Environmental sound classification with semi-supervised learning
 In this paper, we explore a semi-supervised learning approach for environmental sound classification. A convolutional autoencoder is used for pre-training the weights in the network. Two different methods for the invertions of the max-pooling layers are examined in the decoder; upsampling and unpooling. The semi-supervised approach is benchmarked against a supervised approach with similar architecture on a public available dataset. The results show that semi-supervised learning yields slightly better performance utilizing unlabeled data.
