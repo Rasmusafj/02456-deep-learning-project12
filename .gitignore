@@ -1,0 +1,20 @@
+# Ignore all datasets used since they are quite large!
+datasets/
+
+# Ignore pycache 
+__pycache__/
+
+# Mac computers suck
+**/.DS_Store
+
+# Pycharm meta-data
+**/.idea/
+
+# Ignore compiled python files
+**/*.pyc
+
+# Ignore trained models
+**/*.hdf5
+
+# Ignore ipython stuff
+**/.ipynb_checkpoints/
