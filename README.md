@@ -7,7 +7,7 @@ The second step was to implement a semi-supervised learning approach for environ
 
 *Note:* To run the jupyter notebooks, you will need to include a folder '/datasets/' and download the relevant datasets into the folder. The datasets are found at these locations: [UrbandSound-8K](https://serv.cusp.nyu.edu/projects/urbansounddataset/urbansound8k.html), [ESC-50](https://github.com/karoldvl/ESC-50) and [ESC-US](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YDEPUT).
 
-The end goal was a paper with the proposed method and results. The paper can be found in `paper/semi-supervised-learning.pdf`. The abstract is included below. 
+The end goal was a paper with the proposed method and results. The paper can be found in `paper/arpethick-CAE.pdf`. The abstract is included below. 
 
 ## Setup
 
@@ -31,6 +31,6 @@ make test
 ```
 
 
-## Abstract of paper
-### Title: Environmental sound classification with semi-supervised learning
+## Title of paper: Environmental sound classification with semi-supervised learning
+### Abstract
 In this paper, we provide preliminary work on a semi-supervised learning approach for environmental sound classification. A convolutional autoencoder is used for pre-training the weights in the network. Two different methods for the invertions of the max-pooling layers are examined in the decoder; upsampling and unpooling. The semi-supervised approach is benchmarked against a supervised approach with similar architecture on the public available dataset ESC-50. The ESC-US dataset is used for unsupervised pre-training. The results show that the autoencoder learns useful features leading to semi-supervised learning yielding slightly better performance utilizing the unlabeled data.
