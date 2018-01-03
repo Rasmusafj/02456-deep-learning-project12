@@ -9,6 +9,28 @@ The second step was to implement a semi-supervised learning approach for environ
 
 The end goal was a paper with the proposed method and results. The paper can be found in `paper/semi-supervised-learning.pdf`. The abstract is included below. 
 
+## Setup
+
+Run the following commands to setup the conda environment.
+
+```
+make init
+source activate arpethick-cae
+```
+
+Having the environment activated jupyter notebook can be started the usual way.
+
+```
+jupyter notebook
+```
+
+To test the custom unpooling layer use the following command.
+
+```
+make test
+```
+
+
 ## Abstract of paper
 ### Title: Environmental sound classification with semi-supervised learning
 In this paper, we provide preliminary work on a semi-supervised learning approach for environmental sound classification. A convolutional autoencoder is used for pre-training the weights in the network. Two different methods for the invertions of the max-pooling layers are examined in the decoder; upsampling and unpooling. The semi-supervised approach is benchmarked against a supervised approach with similar architecture on the public available dataset ESC-50. The ESC-US dataset is used for unsupervised pre-training. The results show that the autoencoder learns useful features leading to semi-supervised learning yielding slightly better performance utilizing the unlabeled data.

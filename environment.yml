@@ -1,0 +1,15 @@
+name: arpethick-cae
+channels:
+- conda-forge
+- anaconda-fusion
+- defaults
+dependencies:
+- keras
+- librosa
+- numpy
+- pandas
+- matplotlib
+- theano 
+- pygpu
+- pip:
+  - pytest
