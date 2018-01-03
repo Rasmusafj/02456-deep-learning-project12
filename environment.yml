@@ -11,5 +11,8 @@ dependencies:
 - matplotlib
 - theano 
 - pygpu
+- jupyter
+- mkl-service
 - pip:
   - pytest
+  - pescador

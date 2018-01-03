@@ -36,7 +36,7 @@ class DataHandler(object):
 
         if self.dataset == 'ESC-US':
             self.file_ext = "*.ogg"
-            self.data_path = os.path.join(dir_path, '..', 'datasets', 'ESC-US')
+            self.data_path = os.path.join(dir_path, 'datasets', 'ESC-US')
             self.data_dirs = map(lambda d: os.path.join(self.data_path, d, self.file_ext),
                             ['01', '02', '03', '04', '05'])
 
@@ -45,7 +45,7 @@ class DataHandler(object):
             self.labeled = False
         elif self.dataset == 'ESC-50':
             self.file_ext = "*.ogg"
-            self.data_path = os.path.join(dir_path, '..', 'datasets', 'ESC-50')
+            self.data_path = os.path.join(dir_path, 'datasets', 'ESC-50')
             self.esc_50_list = (['101 - Dog',
                                  '102 - Rooster',
                                  '103 - Pig',
@@ -111,7 +111,7 @@ class DataHandler(object):
 
         elif self.dataset == 'UrbanSound8K':
             self.file_ext = "*.wav"
-            self.data_path = os.path.join(dir_path, '..', 'datasets', 'UrbanSound8K', 'audio')
+            self.data_path = os.path.join(dir_path, 'datasets', 'UrbanSound8K', 'audio')
             self.data_dirs = map(lambda d: os.path.join(self.data_path, d, self.file_ext),
                             ['fold1', 'fold2', 'fold3', 'fold4', 'fold5', 'fold6',
                              'fold7', 'fold8', 'fold9', 'fold10'])
