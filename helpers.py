@@ -21,7 +21,6 @@ from keras.models import Model, Sequential
 import pescador
 import matplotlib.pyplot as plt
 
-from DataHandler import DataHandler
 from layers import DePool2D, Upsampling2DPadded
 
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
@@ -66,8 +65,7 @@ def init_config(img_shape, conf=None, extra_conf=None):
     conf.__dict__.update(extra_conf)
     return conf
 
-#%%
-    
+   
 def layer(f):
     def wrapper(*arg, **kwargs):
         return lambda x: f(x, *arg, **kwargs)
